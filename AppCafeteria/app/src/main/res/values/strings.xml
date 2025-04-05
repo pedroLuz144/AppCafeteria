@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AppCafeteria</string>
+    <string name="escolha_seu_ncaf_favorito">Escolha seu \nCafé Favorito</string>
+    <string name="o_melhor_gr_o_a_torra_mais_fina_o_sabor_poderoso">O melhor grão, a torra mais fina, o sabor poderoso</string>
+    <string name="come_ar">Começar</string>
+    <string name="pesquisa">Pesquisa...</string>
+    <string name="categoria">Categoria</string>
+    <string name="caf_s_populares">Cafés Populares</string>
+    <string name="ver_todos">Ver todos</string>
+</resources>

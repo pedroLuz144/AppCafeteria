@@ -1,3 +1,3 @@
 package com.example.appcafeteria.Domain
 
-data class BannerModel()
+data class BannerModel(val url:String="")

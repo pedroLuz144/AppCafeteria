@@ -1,10 +1,12 @@
 package com.example.appcafeteria.Adapter
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.appcafeteria.Activity.DetailActivity
 import com.example.appcafeteria.Domain.ItemsModel
 import com.example.appcafeteria.databinding.ViewholderPopularBinding
 
@@ -27,6 +29,12 @@ class PopularAdapter(val items: MutableList<ItemsModel>) :
         Glide.with(context)
             .load(items[position].picUrl[0])
             .into(holder.binding.pic)
+
+        holder.itemView.setOnClickListener {
+            val intent = Intent(context, DetailActivity::class.java)
+            intent.putExtra("object", items[position])
+            context.startActivity(intent)
+        }
     }
 
     override fun getItemCount(): Int = items.size
